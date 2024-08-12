@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Responsiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Minha Página Responsiva</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="content-section">
+            <h2>Seção 1</h2>
+            <p>Este é um exemplo de conteúdo que se adapta ao tamanho da tela.</p>
+        </section>
+        <section class="content-section">
+            <h2>Seção 2</h2>
+            <p>Este é outro exemplo de conteúdo que se adapta ao tamanho da tela.</p>
+        </section>
+        <section class="content-section">
+            <h2>Seção 3</h2>
+            <p>Este é mais um exemplo de conteúdo que se adapta ao tamanho da tela.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Minha Empresa. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main content */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.content-section {
+    flex: 1 1 300px; /* Base flexível que se ajusta a 300px */
+    margin: 10px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+    
+    .content-section {
+        flex: 1 1 100%; /* Adapta para ocupar 100% da largura em dispositivos menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .header
